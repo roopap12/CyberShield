@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+  dashboard:
+    build: ./dashboard-react
+    ports:
+      - "3001:80"
